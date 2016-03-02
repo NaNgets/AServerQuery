@@ -1,0 +1,45 @@
+﻿Below is the list of known events in Counter-Strike. Some of the events should match GoldSource games aswell.
+
+Teams:
+	CT
+	SPECTATOR
+	TERRORIST
+
+World events:
+	Restart_Round_*		(* = number of seconds till restart)
+	Round_Draw
+	Round_End
+	Round_Start
+	Game_Commencing
+
+Player events:
+	Became_VIP
+	Begin_Bomb_Defuse_With_Kit
+	Begin_Bomb_Defuse_Without_Kit
+	Defused_The_Bomb
+	Dropped_The_Bomb
+	Escaped_As_VIP
+	Game_idle_kick
+	Got_The_Bomb
+	Killed_A_Hostage
+	Planted_The_Bomb
+	Rescued_A_Hostage
+	Spawned_With_The_Bomb
+	Touched_A_Hostage
+
+Suicide events:
+	world				(Typed "kill" in console)
+	worldspawn			(Fell and died)
+	grenade
+
+Team events:
+	All_Hostages_Rescued
+	Bomb_Defused
+	CTs_Win
+	Hostages_Not_Rescued
+	Target_Bombed
+	Target_Saved
+	Terrorists_Win
+	VIP_Assassinated
+	VIP_Escaped
+	VIP_Not_Escaped

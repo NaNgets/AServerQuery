@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{391E857F-88FE-4720-8B00-6724328A3345}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AServerQuery</RootNamespace>
+    <AssemblyName>AServerQuery</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\AServerQuery.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IRconable.cs" />
+    <Compile Include="ValveServer.cs" />
+    <Compile Include="SourceServer.cs" />
+    <Compile Include="HltvInfo.cs" />
+    <Compile Include="LogListener.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="StatusInfo.cs" />
+    <Compile Include="EventArgs\TeamEventArgs.cs" />
+    <Compile Include="EventArgs\PlayerScoreEventArgs.cs" />
+    <Compile Include="EventArgs\TeamScoreEventArgs.cs" />
+    <Compile Include="EventArgs\CvarEventArgs.cs" />
+    <Compile Include="EventArgs\InfoEventArgs.cs" />
+    <Compile Include="EventArgs\ServerEventArgs.cs" />
+    <Compile Include="EventArgs\RconEventArgs.cs" />
+    <Compile Include="EventArgs\PlayerEventArgs.cs" />
+    <Compile Include="EventArgs\PlayerActionEventArgs.cs" />
+    <Compile Include="EventArgs\PlayerOnPlayerEventArgs.cs" />
+    <Compile Include="EventArgs\ExceptionEventArgs.cs" />
+    <Compile Include="EventArgs\DataReceivedEventArgs.cs" />
+    <Compile Include="EventArgs\GoldSrcEventArgs.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="GoldSrcServer.cs" />
+    <Compile Include="HLEvent.cs" />
+    <Compile Include="ServerInfo.cs" />
+    <Compile Include="ModInfo.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerInfo.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Events.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
